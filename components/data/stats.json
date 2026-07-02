@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Total Transactions",
+    "value": "--",
+    "subtext": "Combined logs today",
+    "icon": "ArrowLeftRight"
+  },
+  {
+    "id": 2,
+    "title": "Document Services",
+    "value": "--",
+    "subtext": "Typing, printing, scanning",
+    "icon": "FileText"
+  },
+  {
+    "id": 3,
+    "title": "Courier Logistics",
+    "value": "--",
+    "subtext": "Parcel dispatches logged",
+    "icon": "Truck"
+  },
+  {
+    "id": 4,
+    "title": "Active Customers",
+    "value": "--",
+    "subtext": "Registered database profiles",
+    "icon": "Users"
+  }
+]
