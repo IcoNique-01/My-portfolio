@@ -14,9 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ApexLog | Transaction Logging Application",
+  title: "Imokhai Nathan Portfolio",
   description:
-    "A Unified Transaction Logging Application For Document and Courier Services",
+    "Portfolio of Imokhai C. O. Nathan, a Full Stack Developer passionate about building a modern responsive and scalable web applications.",
+  icons: {
+    icon: "/assets/Img/Iconic_Logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -30,10 +33,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen bg-neutral-50 dark:bg-slate-900 flex flex-col">
+      <body className="min-h-screen bg-neutral-50 dark:bg-neutral-900 flex flex-col">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
+          forcedTheme="system"
           enableSystem
           disableTransitionOnChange
         >
