@@ -14,6 +14,7 @@ import {
   SiTypescript,
   SiNextdotjs,
   SiMysql,
+  SiLaravel,
 } from "react-icons/si";
 
 const frontIcon: Record<string, React.ComponentType<any>> = {
@@ -29,6 +30,7 @@ const frontIcon: Record<string, React.ComponentType<any>> = {
 const backIcon: Record<string, React.ComponentType<any>> = {
   FaPhp,
   SiMysql,
+  SiLaravel,
 };
 
 const ProjectRS = () => {
@@ -80,6 +82,11 @@ const ProjectRS = () => {
       id: 1,
       name: "MySQL",
       icon: "SiMysql",
+    },
+    {
+      id: 2,
+      name: "Laravel",
+      icon: "SiLaravel",
     },
   ];
 

@@ -27,6 +27,7 @@ interface skillProp {
   name: string;
   mastery: number;
   icon: string;
+  core: boolean;
 }
 
 const sideIcon: Record<string, React.ComponentType<any>> = {
