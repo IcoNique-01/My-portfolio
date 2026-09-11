@@ -82,11 +82,7 @@ const Skills = ({ skillset }: miniProp) => {
         <h3 className="font-bold text-base ">{skillset.name}</h3>
       </div>
       <div className="w-full flex flex-col">
-        <span
-          className={`text-sm ${grade === "Excellent" ? "" : grade === "Good" ? "" : grade === "Average" ? "" : grade === "Fair" ? "" : ""} text-right mb-1`}
-        >
-          {grade}
-        </span>
+        <span className={`text-sm font-medium text-right mb-1`}>{grade}</span>
         <div className="w-full shrink-0 h-1.5 rounded-full overflow-hidden bg-neutral-400/50 dark:bg-neutral-950">
           <motion.div
             ref={progressBar}
