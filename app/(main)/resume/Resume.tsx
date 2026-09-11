@@ -72,7 +72,7 @@ const Resume = () => {
     {
       id: 11,
       name: "Adobe Photoshop",
-      mastery: 45.5,
+      mastery: 32.78,
       icon: "DiPhotoshop",
     },
     {
