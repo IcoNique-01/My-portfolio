@@ -48,6 +48,8 @@ interface projectType {
 }
 
 const ProjectCite = ({ project }: projectType) => {
+  const description = project.body;
+
   return (
     <a href={project.href} target="_blank">
       <div className="grid grid-rows-5 gap-2 overflow-hidden">
@@ -65,7 +67,7 @@ const ProjectCite = ({ project }: projectType) => {
               {project.name}
             </p>
             <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-200/80">
-              {project.body}
+              {description}
             </p>
           </div>
           <div className="w-full flex items-start">

@@ -13,8 +13,8 @@ interface prop {
 const Profile = () => {
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/assets/Docs/Imokhai_Nathan_Project.pdf";
-    link.download = "Imokhai_Nathan_Project.pdf";
+    link.href = "/assets/Docs/IMOKHAI_NATHAN_CV.pdf";
+    link.download = "IMOKHAI_NATHAN_CV.pdf";
     link.click();
   };
 
@@ -29,7 +29,7 @@ const Profile = () => {
       id: 0,
       name: "Imokhai Nathan",
       role: "Software Engineer",
-      Img: "/assets/Img/Nathan_Profile_2.jpeg",
+      Img: "/assets/Img/My-profile.jpg",
     },
   ];
 

@@ -42,7 +42,7 @@ const Navbar = ({ title }: prop) => {
               return (
                 <Link
                   key={link.id}
-                  className={`py-1 text-sm sm:text-nowrap sm:text-base flex flex-col lg:flex-row md:gap-1.5 items-center cursor-pointer relative hover:text-blue-700 dark:hover:text-blue-200 duration-300 after:content-[''] after:absolute after:w-full atfer:h-0.5 after:left-0 after:bottom-0 after:scale-x-0 after:origin-left hover:after:scale-x-100 after:bg-blue-700 after:transition-transform after:duration-300 ${
+                  className={`py-1 text-sm sm:text-nowrap sm:text-base flex flex-col lg:flex-row md:gap-1.5 items-center cursor-pointer relative hover:text-blue-700 dark:hover:text-blue-200 duration-300 after:content-[''] after:absolute after:w-full after:h-0.5 after:left-0 after:bottom-0 after:scale-x-0 after:origin-left hover:after:scale-x-100 after:bg-blue-700 dark:after:bg-blue-200 after:transition-transform after:duration-300 ${
                     link.name.toLocaleLowerCase().replace(" ", "-") ===
                     title.toLocaleLowerCase().replace(" ", "-")
                       ? "text-blue-700 dark:text-blue-200"

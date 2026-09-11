@@ -60,7 +60,7 @@ const Resume = () => {
     {
       id: 9,
       name: "Laravel",
-      mastery: 5.5,
+      mastery: 35.28,
       icon: "SiLaravel",
     },
     {
@@ -153,9 +153,11 @@ const Resume = () => {
         <div className="w-full flex flex-col gap-4">
           <h2 className="font-bold tracking-wide text-lg">Skills Sets</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {skillSets.map((skillset) => (
-              <Skills key={skillset.id} skillset={skillset} />
-            ))}
+            {skillSets
+              .filter((set) => set.mastery > 5)
+              .map((skillset) => (
+                <Skills key={skillset.id} skillset={skillset} />
+              ))}
           </div>
         </div>
       </div>
