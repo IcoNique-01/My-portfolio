@@ -8,78 +8,91 @@ const Resume = () => {
       name: "HTML",
       mastery: 98.9,
       icon: "FaHtml5",
+      core: true,
     },
     {
       id: 1,
       name: "CSS",
       mastery: 98.2,
       icon: "FaCss3Alt",
+      core: true,
     },
     {
       id: 2,
       name: "JavaScript",
       mastery: 89.8,
       icon: "FaJs",
+      core: true,
     },
     {
       id: 3,
       name: "React",
       mastery: 78.2,
       icon: "FaReact",
+      core: true,
     },
     {
       id: 4,
       name: "Tailwind CSS",
       mastery: 96.4,
       icon: "SiTailwindcss",
+      core: true,
     },
     {
       id: 5,
       name: "Next.Js",
       mastery: 84.8,
       icon: "SiNextdotjs",
+      core: true,
     },
     {
       id: 6,
       name: "TypeScript",
       mastery: 53.7,
       icon: "SiTypescript",
+      core: true,
     },
     {
       id: 7,
       name: "PHP",
       mastery: 72.4,
       icon: "FaPhp",
+      core: true,
     },
     {
       id: 8,
       name: "MySQL",
       mastery: 68.1,
       icon: "SiMysql",
+      core: true,
     },
     {
       id: 9,
       name: "Laravel",
       mastery: 35.28,
       icon: "SiLaravel",
+      core: true,
     },
     {
       id: 10,
       name: "React Native",
       mastery: 0,
       icon: "FaReact",
+      core: true,
     },
     {
       id: 11,
       name: "Adobe Photoshop",
       mastery: 52.78,
       icon: "DiPhotoshop",
+      core: false,
     },
     {
       id: 12,
       name: "Microsoft Word",
       mastery: 99.5,
       icon: "FaFileWord",
+      core: false,
     },
   ];
 
@@ -150,14 +163,31 @@ const Resume = () => {
             <Work key={work.id} work={work} />
           ))}
         </div>
-        <div className="w-full flex flex-col gap-4">
-          <h2 className="font-bold tracking-wide text-lg">Skills Sets</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {skillSets
-              .filter((set) => set.mastery > 5)
-              .map((skillset) => (
-                <Skills key={skillset.id} skillset={skillset} />
-              ))}
+        <div className="w-full flex flex-col gap-3.5">
+          <h2 className="font-bold tracking-wide text-lg uppercase text-blue-700 dark:text-blue-200">
+            Skills Sets
+          </h2>
+          <div className="flex flex-col items-start w-full">
+            <span className=" font-semibold uppercase mb-2">
+              Core Technical Stack
+            </span>
+            <div className="w-full grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {skillSets
+                .filter((set) => set.mastery > 5 && set.core === true)
+                .map((skillset) => (
+                  <Skills key={skillset.id} skillset={skillset} />
+                ))}
+            </div>
+          </div>
+          <div className="flex flex-col items-start w-full">
+            <span className=" font-semibold uppercase mb-2">Others</span>
+            <div className="w-full grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {skillSets
+                .filter((set) => set.mastery > 5 && set.core === !true)
+                .map((skillset) => (
+                  <Skills key={skillset.id} skillset={skillset} />
+                ))}
+            </div>
           </div>
         </div>
       </div>

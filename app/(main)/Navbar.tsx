@@ -34,7 +34,6 @@ const Navbar = ({ title }: prop) => {
         <h1 className="font-extrabold text-xl relative after:content-[''] after:left-0 after:bottom-0 after:w-1/4 after:h-0.5 after:bg-blue-700 uppercase text-blue-700 dark:text-blue-200 text-nowrap">
           {title}
         </h1>
-        {/* <ModeToggle /> */}
         <nav className=" sm:w-full lg:w-fit">
           <ul className="flex text-indigo-900 justify-between items-center sm:gap-5">
             {Links.map((link: linkProp) => {
