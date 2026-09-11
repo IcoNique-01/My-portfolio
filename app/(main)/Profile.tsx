@@ -2,6 +2,7 @@
 import { DownloadIcon } from "lucide-react";
 import InnerProfile from "./InnerProfile";
 import { FaWhatsapp, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 interface prop {
   id: number;
@@ -22,6 +23,7 @@ const Profile = () => {
     FaWhatsapp,
     FaInstagram,
     FaXTwitter,
+    FaGithub,
   };
 
   const myInfo = [
@@ -75,6 +77,11 @@ const Profile = () => {
       id: 2,
       href: "https://x.com/N_eithan02",
       icon: "FaXTwitter",
+    },
+    {
+      id: 3,
+      href: "https://github.com/IcoNique-01",
+      icon: "FaGithub",
     },
   ];
 
