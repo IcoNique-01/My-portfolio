@@ -1,6 +1,7 @@
 import { User, FileText, BriefcaseBusiness, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 import { FaWhatsapp, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 interface listProp {
   id: number;
@@ -32,6 +33,7 @@ const FooterTop = ({ topic }: prop) => {
     FaWhatsapp,
     FaInstagram,
     FaXTwitter,
+    FaGithub,
   };
 
   const socials = [
@@ -49,6 +51,11 @@ const FooterTop = ({ topic }: prop) => {
       id: 2,
       href: "https://x.com/N_eithan02",
       icon: "FaXTwitter",
+    },
+    {
+      id: 3,
+      href: "https://github.com/IcoNique-01",
+      icon: "FaGithub",
     },
   ];
 
@@ -99,7 +106,7 @@ const FooterTop = ({ topic }: prop) => {
         <p className="text-sm tracking-wide leading-relaxed text-neutral-500 dark:text-neutral-200/80">
           {text}
         </p>
-        <div className="flex items-center gap-6 h-fit">
+        <div className="flex items-center gap-4 h-fit">
           {socials.map((social) => {
             const IconComponent = socialIcon[social.icon];
             return (
