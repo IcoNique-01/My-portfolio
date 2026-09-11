@@ -24,7 +24,7 @@ const Resume = () => {
     {
       id: 3,
       name: "React",
-      mastery: 85.2,
+      mastery: 78.2,
       icon: "FaReact",
     },
     {
@@ -42,7 +42,7 @@ const Resume = () => {
     {
       id: 6,
       name: "TypeScript",
-      mastery: 73.7,
+      mastery: 53.7,
       icon: "SiTypescript",
     },
     {
@@ -72,7 +72,7 @@ const Resume = () => {
     {
       id: 11,
       name: "Adobe Photoshop",
-      mastery: 32.78,
+      mastery: 52.78,
       icon: "DiPhotoshop",
     },
     {

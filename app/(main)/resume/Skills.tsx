@@ -54,6 +54,17 @@ const Skills = ({ skillset }: miniProp) => {
   const isInView = useInView(progressBar, { once: true, amount: 1 });
   const control = useAnimation();
 
+  const grade =
+    skillset.mastery >= 80 && skillset.mastery <= 100
+      ? "Excellent"
+      : skillset.mastery >= 60 && skillset.mastery < 80
+        ? "Good"
+        : skillset.mastery >= 50 && skillset.mastery < 60
+          ? "Average"
+          : skillset.mastery >= 35 && skillset.mastery < 50
+            ? "Fair"
+            : "Poor";
+
   useEffect(() => {
     if (isInView) {
       control.start("visible");
@@ -71,9 +82,10 @@ const Skills = ({ skillset }: miniProp) => {
         <h3 className="font-bold text-base ">{skillset.name}</h3>
       </div>
       <div className="w-full flex flex-col">
-        <span className="text-sm text-neutral-500 dark:text-neutral-200/80  text-right">
-          <span>{skillset.mastery}</span>
-          <span>%</span>
+        <span
+          className={`text-sm ${grade === "Excellent" ? "" : grade === "Good" ? "" : grade === "Average" ? "" : grade === "Fair" ? "" : ""} text-right mb-1`}
+        >
+          {grade}
         </span>
         <div className="w-full shrink-0 h-1.5 rounded-full overflow-hidden bg-neutral-400/50 dark:bg-neutral-950">
           <motion.div
