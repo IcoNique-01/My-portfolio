@@ -56,9 +56,9 @@ const Skills = ({ skillset }: miniProp) => {
   const control = useAnimation();
 
   const grade =
-    skillset.mastery >= 80 && skillset.mastery <= 100
+    skillset.mastery >= 75 && skillset.mastery <= 100
       ? "Excellent"
-      : skillset.mastery >= 60 && skillset.mastery < 80
+      : skillset.mastery >= 60 && skillset.mastery < 75
         ? "Good"
         : skillset.mastery >= 50 && skillset.mastery < 60
           ? "Average"

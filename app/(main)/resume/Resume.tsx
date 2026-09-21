@@ -20,14 +20,14 @@ const Resume = () => {
     {
       id: 2,
       name: "JavaScript",
-      mastery: 89.8,
+      mastery: 74.8,
       icon: "FaJs",
       core: true,
     },
     {
       id: 3,
       name: "React",
-      mastery: 78.2,
+      mastery: 59.2,
       icon: "FaReact",
       core: true,
     },
@@ -41,7 +41,7 @@ const Resume = () => {
     {
       id: 5,
       name: "Next.Js",
-      mastery: 84.8,
+      mastery: 69.8,
       icon: "SiNextdotjs",
       core: true,
     },
@@ -83,7 +83,7 @@ const Resume = () => {
     {
       id: 11,
       name: "Adobe Photoshop",
-      mastery: 52.78,
+      mastery: 50.78,
       icon: "DiPhotoshop",
       core: false,
     },
